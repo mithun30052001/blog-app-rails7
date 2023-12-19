@@ -8,5 +8,5 @@
 User.create(email: "admin@example.com",password: "password",password_confirmation: "password")
 
 10.times do |post|
-  Post.create(title: "Title #{post}", body:"This is the body of post #{post}",user_id: User.second.id)
+  Post.create(title: "Title #{post}", body:"This is the body of post #{post}",user_id: User.first.id)
 end
